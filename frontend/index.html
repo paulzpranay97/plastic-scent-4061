@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <div id="navbar">
+
+        <div id="navbar_logo">
+            <!-- LOGO -->
+            <a href="./index.html"><img src="https://static.buffer.com/login/public/img/buffer-logo.svg" alt="error"></a>
+        </div>
+
+        <div id="navbar_anch">
+            <!-- ANCHOR -->
+            <a href="sachin.html">Tools</a>
+            <a href="">Channels</a>
+            <a href="">Pricing</a>
+            <a href="">Blog</a>
+           
+        </div>
+
+        <div id="navbar_lnsp">
+            <!-- LOGIN & SIGN UP -->
+            <a href="#popup" class="trigger" id="Login">Login</a>
+            <button id="get_start">Get Started Now</button>
+
+        </div>
+
+        
+
+    </div>
+    <div id="pop">
+        <div id="popup" class="overlay">
+            <div class="wrapper">
+                <a href="#">3<span class="multiply">&times;</span>4</a>
+                <div class="column details">
+                    <div class="signin">
+                        <h1>Sign In</h1>
+                        <form id="in">
+                            <input id="emailin" type="email" placeholder="Enter Your Email">
+                            <input id="passwordin" type="password" placeholder="Enter Your Password">
+                            <input class="form-submit" type="submit" value="Sign In">
+                        </form>
+
+                        <a href="#">Forgot Password</a>
+                        <span>You don't have an account yet?<button id="signup">Create it now</button></span>
+                    </div>
+                    <div class="signup">
+                        <h1>Sign Up</h1>
+                        <form id="up">
+                            <input id="nameup" type="name" placeholder="Enter Your Full Name">
+                            <input id="emailup" type="email" placeholder="Enter Your Email">
+                            <input id="mobileno" type="number" placeholder="Enter Your Mobile No.">
+                            <input id="passwordup" type="password" placeholder="Enter Your Passsword">
+                            <input id="age" type="number" placeholder="Enter Your Age">
+                            
+
+                           
+
+                            <input id="city" type="text" placeholder="Enter Your City">
+
+                            <input class="form-submit" type="submit" value="Sign In">
+                        </form>
+                        <span>Already have an account? <button id="signup">Sign In</button></span>
+                    </div>
+
+                </div>
+
+                <div class="column content">
+                    <div class="signin">
+                        <h1 id="alertinh">Welcome Back!</h1>
+                        <p  id="alertinp">To keep connected with us please login with your personal details.</p>
+                    </div>
+                    <div class="signup">
+                        <h1>Hello , User!</h1>
+                        <p>Enter your personal details and start journey with us .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $('.signup').hide();
+        $('#signup, #signup').on(
+            'click',
+            function () {
+                $('.signin, .signup').toggle()
+            }
+        )
+    </script>
+    
+</body>
+
+
+</html>
+<script src="./javascript/index.js"></script>
+
+<!-- 
+<div class="silder">
+            <div>
+                <marquee behavior="" direction="left" scrollamount="2"><a href="./productpage.html" target="_blank">
+                <img src="https://cdn.fcglcdn.com/brainbees/banners/brandstrip1208-3-new-19-08-19.jpg" alt=""></a></marquee></div>          
+        </div> -->
