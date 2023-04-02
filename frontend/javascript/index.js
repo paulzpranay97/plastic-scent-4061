@@ -85,7 +85,7 @@ fetch("http://localhost:5511/users/login",{
     console.log(res);
     
     localStorage.setItem("token",res.token);
-    // window.location.href = "./addposts.html";
+    window.location.href = "./admin.html";
        $('.signup, .signin, #pop').hide();
 
     
